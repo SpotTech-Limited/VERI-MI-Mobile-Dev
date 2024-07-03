@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '/screens/home_screen.dart';
+import '/app/theme/app_theme.dart';
+import '/core/screens/bottom_nav_bar_screen/bottom_nav_bar_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,8 +12,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeScreen(),
+    return MaterialApp(
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
+      debugShowCheckedModeBanner: false,
+      home: const BottomNavBarScreen(),
     );
   }
 }
