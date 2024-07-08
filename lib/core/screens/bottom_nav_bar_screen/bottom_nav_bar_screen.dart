@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:veri_mi_mobile/features/home/views/screens/home_screen.dart';
 
 import '/core/screens/bottom_nav_bar_screen/bottom_nav_bar.dart';
 
@@ -12,11 +13,11 @@ class BottomNavBarScreen extends StatefulWidget {
 class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   int _currentPageIndex = 0;
 
-  final List<Widget> _screens = [
-    const Center(child: Text('Home', style: TextStyle(fontSize: 60))),
-    const Center(child: Text('Search', style: TextStyle(fontSize: 60))),
-    const Center(child: Text('Report', style: TextStyle(fontSize: 60))),
-    const Center(child: Text('Support', style: TextStyle(fontSize: 60))),
+  final List<Widget> _screens = const [
+    HomeScreen(),
+    Center(child: Text('Search', style: TextStyle(fontSize: 60))),
+    Center(child: Text('Report', style: TextStyle(fontSize: 60))),
+    Center(child: Text('Support', style: TextStyle(fontSize: 60))),
   ];
 
   @override

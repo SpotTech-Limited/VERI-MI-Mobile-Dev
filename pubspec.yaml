@@ -10,6 +10,18 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Creating dot indicator for PageView
+  smooth_page_indicator: ^1.1.0
+
+  # For storing preferences locally
+  shared_preferences: ^2.2.3
+
+  # for state management
+  flutter_riverpod: ^2.5.1
+
+  # to manage routing
+  go_router: ^14.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -23,5 +35,41 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/onboarding/
     - assets/icons/
-    
+    - assets/fonts/
+
+
+  fonts:
+  - family: Aileron
+    fonts:
+      - asset: 'assets/fonts/aileron/Aileron-Thin.otf'
+        weight: 100
+      - asset: 'assets/fonts/aileron/Aileron-UltraLight.otf'
+        weight: 200
+      - asset: 'assets/fonts/aileron/Aileron-Light.otf'
+        weight: 300
+      - asset: 'assets/fonts/aileron/Aileron-Regular.otf'
+        weight: 400
+      - asset: 'assets/fonts/aileron/Aileron-SemiBold.otf'
+        weight: 600
+      - asset: 'assets/fonts/aileron/Aileron-Bold.otf'
+        weight: 700
+      - asset: 'assets/fonts/aileron/Aileron-Heavy.otf'
+        weight: 800
+      - asset: 'assets/fonts/aileron/Aileron-Black.otf'
+        weight: 900
+  - family: Roboto
+    fonts:
+      - asset: 'assets/fonts/roboto/Roboto-Thin.ttf'
+        weight: 100
+      - asset: 'assets/fonts/roboto/Roboto-Light.ttf'
+        weight: 300
+      - asset: 'assets/fonts/roboto/Roboto-Regular.ttf'
+        weight: 400
+      - asset: 'assets/fonts/roboto/Roboto-Medium.ttf'
+        weight: 500
+      - asset: 'assets/fonts/roboto/Roboto-Bold.ttf'
+        weight: 700
+      - asset: 'assets/fonts/roboto/Roboto-Black.ttf'
+        weight: 900
